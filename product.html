@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--nav-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">GREENDEN</h1>
+
+
+        
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+          
+          
+          
+        <ul class=" gap-3 text-gray-600 hidden md:flex">
+            <li><a href="index.html" class="hover:underline  hover:text-black">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+      
+    </nav>
+
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p class="text-gray-600 inline cursor-pointer" id="closenav">X</p>
+        </div>
+        <ul class=" flex flex-col gap-5 items-center text-gray-600">
+            <li><a href="index.html" class="hover:underline  hover:text-black">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+    
+      </section>
+
+
+
+    <!--gallery-->
+    <section class="p-2 m-5 text-center">
+        <h1 class="font-bold text-2xl p-3">Our Products</h1>
+        <input id="s" placeholder="search for a product" style="width: 90%; height: 10%;padding: 10px; margin-bottom: 20px; border: 2px solid black;"></input>
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div  class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/DALL·E 2024-12-17 20.20.30 - A realistic image of a jasmine plant with delicate white flowers and lush green leaves, in a simple ceramic pot, placed against a neutral background, .webp " >
+                <p>Lilly</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/DALL·E 2024-12-17 20.17.18 - A close-up of a beautiful white lily with delicate petals and vibrant green leaves, in a simple decorative pot, placed on a neutral background, highly.webp" >
+                <p>Jasmine</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/DALL·E 2024-12-19 22.39.00 - A realistic and detailed sunflower with bright yellow petals and a dark brown center, placed in a simple, clean white ceramic pot, against a minimalis.webp" >
+                <p>Sunflower</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/DALL·E 2024-12-19 22.39.27 - A realistic and detailed rose flower with vibrant red petals, placed in a simple white ceramic pot. The pot is clean and minimalistic, and the backgro.webp" >
+                <p>Rose</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/Unknown.jpg" style="width: 200px; height: 200px;">
+                <p>Money</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/poppy-jpeg.jpeg" style="width: 200px; height: 200px;">
+                <p>Poppy</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/resized_image_200x200.png" >
+                <p>Abutilon</p>
+            </div>
+            <div class="p-3 border border-black rounded hover:shadow-2xl transform hover:-translate-y-2">
+                <img src="./images/DALL·E 2024-12-19 22.39.00 - A realistic and detailed sunflower with bright yellow petals and a dark brown center, placed in a simple, clean white ceramic pot, against a minimalis.webp">
+                <p>Iris</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-green-100 p-10 text-center">
+        <h1 class="font-bold text-2xl hover:underline">GREENDEN</h1>
+        <p class="mt-5">At Greenden, we are passionate about bringing nature closer to you with our premium selection of indoor and outdoor plants. Whether you're a seasoned gardener or just starting, we offer eco-friendly solutions to nurture your green space. Explore sustainable gardening tips, quality plants, and exceptional customer service.</p>
+        <p class="p-2">@ 2023 Greenden.com </p>
+        <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+    
+       <i class="fa-brands fa-facebook " style="color: #000000;"></i>
+       <div style="text-decoration: none;padding:20px ;">
+        <a href="index.html">Home |</a>
+        <a href="product.html">Products |</a>
+        <a href="contact.html">Contact</a>
+       </div>
+    
+    </section>
+
+    <script src="product.js"></script>
+    
+
+    </body>
+    </html>
